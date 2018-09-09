@@ -1,4 +1,11 @@
-• What is a gitignore ?le and what should it include for a Java project? 
+• What is a gitignore file and what should it include for a Java project? 
+--Gitignore file resides in the github repository and it contains all files extentions that are not required to be maintained (add,commit) in github for version controlling. It should contain all .class, .zip, .rar files for which versioning are not required. It should include .java files which we need to keep and maintain in our repository.
+
 • What does fast-forward in Git mean? 
-• Why should you have di?erent branches? 
+-- This is a form of nranch merging. it happens in certain situation as follows: if the master does not have a commit, that is not present in a branch to be merged, i.e. if there is no divergence in the master and branch is simply ahead of its master, git uses the far forward merging mechanism and simply lifts the HEAD to the latest commit the branch has.
+
+• Why should you have different branches? 
+-- If multiple people are making chenges on a single file, each of them has to checkout the file in their local machine in order to make the changes. For each such checkout, a new brach gets created.
+
 • In a project how many remote Git repositories do you usually have?
+-- I think 1 project in each repository is recommended. We can have multiple projects though in a single repo.
